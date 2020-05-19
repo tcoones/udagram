@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_MEDIA_BUCKET: udagram-ones-dev
+  AWS_PROFILE: default
+  AWS_REGION: us-east-2
+  JWT_SECRET: A.DD!d222nkckfhjgnskdnhscjknksnkckfmcfkjhcgmkhkjhxsgfxg
+  POSTGRESS_DATABASE: udagramonesdev
+  POSTGRESS_HOST: udagramonesdev.cjkcmfcuwgei.us-east-2.rds.amazonaws.com
+  URL: http://192.168.99.100:8100
+metadata:
+  name: env-config

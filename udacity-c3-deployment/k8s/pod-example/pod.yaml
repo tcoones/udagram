@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-example
+spec:
+  containers:
+  - image: tcoones/reverseproxy
+    name: reverseproxy
+    imagePullPolicy: Always          
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "50m"
+      limits:
+        memory: "1024Mi"
+        cpu: "125m"       
+    ports:
+    - containerPort: 8080
+  restartPolicy: Always
